@@ -19,3 +19,8 @@
     color: gold;
     font-style: italic;
 }
+
+.underlowtitle {
+    text-decoration: underline;
+    font-style: oblique;
+}
