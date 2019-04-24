@@ -28,4 +28,5 @@
 .superlowtitle {
     color: lightgreen;
     font-style: bold;
+    text-decoration: underline;
 }
