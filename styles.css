@@ -14,3 +14,8 @@
     height: 50px;
     box-shadow: 3px 3px 3px black;
 }
+
+.lowtitle {
+    color: gold;
+    font-style: italic;
+}
