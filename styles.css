@@ -24,3 +24,8 @@
     text-decoration: underline;
     font-style: oblique;
 }
+
+.superlowtitle {
+    color: lightgreen;
+    font-style: bold;
+}
