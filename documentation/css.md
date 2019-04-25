@@ -6,16 +6,16 @@ Le CSS ("Cascading Style Sheets") est un langage de balises. Il est principaleme
 fichiers HTML (personnaliser la mise en page d'un site web).
 ---
 
-##Syntaxe  
-     color                      couleur (de l'élément désigné)
-     text-align                 alignement de texte
-     background-color           couleur de fond     
-     text-decoration            décoration de texte (souligner)
-     border                     bordure
-     width                      largeur
-     height                     hauteur
-     box-shadow                 ombre de la "boite"
-     font-style                 style de police
+##Syntaxe
+    color                      couleur (de l'élément désigné)
+    text-align                 alignement de texte
+    background-color           couleur de fond     
+    text-decoration            décoration de texte (souligner)
+    border                     bordure
+    width                      largeur
+    height                     hauteur
+    box-shadow                 ombre de la "boite"
+    font-style                 style de police
 ---
 ##Flexbox
 
