@@ -1,6 +1,7 @@
 #CSS
 
-##Qu'est ce que c'est?  
+##Qu'est ce que c'est?
+
 Le CSS ("Cascading Style Sheets") est un langage de balises. Il est principalement utilisé pour mettre en forme les 
 fichiers HTML (personnaliser la mise en page d'un site web).
 ---
@@ -18,8 +19,9 @@ fichiers HTML (personnaliser la mise en page d'un site web).
 ---
 ##Flexbox
 
-###Définition:  
-  Le CSS a créé un modèle de disposition appelé « Flexible box » (qu’on appelle couramment le FlexBox) qui introduit 
+###Définition:
+
+Le CSS a créé un modèle de disposition appelé « Flexible box » (qu’on appelle couramment le FlexBox) qui introduit 
   la nouvelle valeur (flex) pour la propriété (display) ainsi que la propriété (flex) (et toutes ses sous propriétés).  
   Le flexbox est aujourd’hui l’outil le plus puissant et simple pour créer des structures responsives et flexibles, 
   c’est-à-dire pour positionner et aligner des éléments HTML sans même connaitre leur dimension à priori.
