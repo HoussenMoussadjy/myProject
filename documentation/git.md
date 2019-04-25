@@ -1,3 +1,4 @@
+
 #Git
 
 ##Qu'est ce que Git?
@@ -6,7 +7,7 @@ A ne pas confondre avec Github qui est la plateforme en ligne/le serveur qui est
 
 ---
 
-##Comment ça marche?
+##Comment ça marche?  
 On envoie notre fichier sur le cloud (repository).  
 Ensuite, si il y a d'autres contributeurs on aura un échange entre nous.   
 Le premier va *pusher* (mettre en ligne) le code originel, un autre va *puller* (ramener à soi) le fichier pour faire des modifications.  
@@ -14,7 +15,7 @@ On peut faire un *revert* (retour en arrière) si on n'aime pas les modification
 
 ---
 
-##Verbes d'actions propres à Github
+##Verbes d'actions propres à Github  
 * commit: pusher en local.
 * merge: faire une réconciliation entre les modifications de plusieurs développeurs; ex: mixer deux fichiers modifiés par 
 deux personnes différentes en un seul.
