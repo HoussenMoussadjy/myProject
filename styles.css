@@ -1,38 +1,39 @@
-.background {
-    background-color: aquamarine;
+.h1{
+    font-size: 40px;
+    text-align: center;
 }
 
-.title {
-    color: crimson;
+header{
+    height: 100px;
 }
 
-.undertitle {
-    color: darkorange;
-    text-decoration: underline;
-    border: thin solid red;
-    width: 50%;
-    height: 50px;
-    box-shadow: 3px 3px 3px black;
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center ;
+    background-color: darkgray ;
+    border-top: 2px solid #AAA;
 }
 
-.lowtitle {
-    color: gold;
-    font-style: italic;
+.container{
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    widht: 1000px;
+    height: 1000px;
 }
 
-.underlowtitle {
-    text-decoration: underline;
-    font-style: oblique;
+.container > section{
+    padding: 20px;
+    width: 1000px;
+}
+.item1{
+    background-color: red;
+    widht: 70%;
 }
 
-.superlowtitle {
-    color: lightgreen;
-    font-style: bold;
-    text-decoration: underline;
-}
-
-.ultralowtitle {
-    font-style: italic;
-    text-decoration: underline;
-    color: navy;
+.item2{
+    background-color: blue;
+    widht: 30%;
 }
