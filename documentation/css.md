@@ -32,7 +32,3 @@ Le CSS a créé un modèle de disposition appelé « Flexible box » (qu’on ap
   * L’alignement des éléments selon un axe principal et secondaire ainsi que leur répartition ;
   * L’ordre des éléments ;
   * La place prise par les éléments en fonction de l’espace disponible.
-
-  
-     
-      
