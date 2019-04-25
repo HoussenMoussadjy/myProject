@@ -1,7 +1,7 @@
 
 #Git
 
-##Qu'est ce que Git?
+##Qu'est ce que Git?  
 Git est un protocole d'échange de données (ex: du code entre développeurs).  
 A ne pas confondre avec Github qui est la plateforme en ligne/le serveur qui est propulsé par Git.
 
