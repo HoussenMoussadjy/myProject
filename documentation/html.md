@@ -1,15 +1,13 @@
-#HTML  
+# HTML  
 
-##Qu'est ce que c'est?  
+## Qu'est ce que c'est?  
   Le HTML (« HyperText Mark-Up Language ») est un langage de balises. Les balises permettent 
   d'indiquer la façon dont doit être présenté le document et les liens qu'il établit avec d'autres documents.  
   Il est essentiel pour la mise en forme d'une page web.
 
----
+## Syntaxe  
 
-##Syntaxe  
-
-    <a>	                                           définir un lien
+    <a>	                                               définir un lien
     <head>                                             l'en-tête 
     <body>                                             le corps principal
     <title>                                            titre
