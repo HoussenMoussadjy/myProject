@@ -1,12 +1,11 @@
-#CSS
+# CSS
 
-##Qu'est ce que c'est?
+## Qu'est ce que c'est?
 
 Le CSS ("Cascading Style Sheets") est un langage de balises. Il est principalement utilisé pour mettre en forme les 
 fichiers HTML (personnaliser la mise en page d'un site web).
----
 
-##Syntaxe
+## Syntaxe
     color                      couleur (de l'élément désigné)
     text-align                 alignement de texte
     background-color           couleur de fond     
@@ -16,10 +15,10 @@ fichiers HTML (personnaliser la mise en page d'un site web).
     height                     hauteur
     box-shadow                 ombre de la "boite"
     font-style                 style de police
----
-##Flexbox
 
-###Définition:
+## Flexbox
+
+### Définition:
 
 Le CSS a créé un modèle de disposition appelé « Flexible box » (qu’on appelle couramment le FlexBox) qui introduit 
   la nouvelle valeur (flex) pour la propriété (display) ainsi que la propriété (flex) (et toutes ses sous propriétés).  
