@@ -5,6 +5,7 @@
   d'indiquer la façon dont doit être présenté le document et les liens qu'il établit avec d'autres documents.  
   Il est essentiel pour la mise en forme d'une page web.
 
+
 ## Syntaxe  
 
     <a>	                                               définir un lien
