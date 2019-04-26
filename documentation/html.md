@@ -7,8 +7,7 @@
 
 
 ## Syntaxe  
-
-    <a>	                                               définir un lien
+    <a>	                                           définir un lien
     <head>                                             l'en-tête 
     <body>                                             le corps principal
     <title>                                            titre
