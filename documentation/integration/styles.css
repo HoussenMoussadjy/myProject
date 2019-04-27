@@ -14,6 +14,7 @@
     padding-bottom: 120px;
     padding-top: 20px;
     background-color: black;
+    border-radius: 20px;
 }
 
 .box-container {
@@ -28,13 +29,14 @@
 .box-1 {
     background-color: aquamarine;
     width: 70%;
+    padding-top: 20px;
 }
 
 .box-2 {
     background-color: lightblue;
     width: 30%;
     margin-left: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .footer{
@@ -45,6 +47,11 @@
     border-top: 2px solid #AAA;
     padding-bottom: 20px;
     font-style: italic;
+    border-radius: 20px;
+}
+
+h2 {
+    color: red;
 }
 
 h2, h3 {
@@ -53,10 +60,11 @@ h2, h3 {
 
 p, ul, h1, h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 .box-1, .box-2 {
     padding-bottom: 160px;
+    border-radius: 20px;
     padding-left: 20px;
 }
 
@@ -64,4 +72,16 @@ p, ul, h1, h2 {
     width: 140px;
     height: 180px;
     border-radius: 20px;
+}
+
+.list-1, .list-2 {
+    list-style-type: none;
+}
+
+.interests, .competences, .path, .first-date, .second-date {
+    font-weight: bold;
+}
+
+.first-locality, .second-locality {
+    font-style: italic;
 }
