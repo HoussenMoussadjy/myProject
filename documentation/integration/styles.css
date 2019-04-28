@@ -27,13 +27,13 @@
 }
 
 .box-1 {
-    background-color: aquamarine;
+    background-color: rgba(33, 214, 206, 0.97);
     width: 70%;
     padding-top: 20px;
 }
 
 .box-2 {
-    background-color: lightblue;
+    background-color: rgba(139, 107, 247, 0.95);
     width: 30%;
     margin-left: 10px;
     padding-top: 20px;
@@ -43,8 +43,8 @@
     height: 50px;
     text-align: center ;
     font-size: small;
-    background-color: #AAA ;
-    border-top: 2px solid #AAA;
+    background-color: rgba(255, 182, 193, 0.91);
+    border-top: 2px solid rgba(255, 182, 193, 0.91);
     padding-bottom: 20px;
     font-style: italic;
     border-radius: 20px;
