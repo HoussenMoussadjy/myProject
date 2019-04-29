@@ -1,11 +1,11 @@
 const myDictionnary = new Map()
-    .set ('#name', 'Houssen Moussadjy')
+    .set ('#name', 'HOUSSEN MOUSSADJY')
     .set ('#profile', 'PROFILE')
     .set ('#experience', 'EXPERIENCE')
     .set ('#interests','INTERETS')
     .set ('#contact','CONTACT')
     .set ('#education','EDUCATION')
-    .set ('#skills','COMPETENCES')
+    .set ('#skills','COMPETENCES');
 
 
 function replace (selector,data) {
@@ -14,7 +14,6 @@ function replace (selector,data) {
 
 myDictionnary.forEach((value, key) => {
     replace(key, value);
-})
-
+});
 
 
