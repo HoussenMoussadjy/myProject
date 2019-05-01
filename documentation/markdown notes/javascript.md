@@ -56,4 +56,35 @@ reste la même.
     });    
     
         
-        
+## Fonctions basiques
+
+Je veux une fonction qui me permette de multiplier 5 par 10:
+
+    function multiplicator (x,y){
+       return x * y
+    }
+   
+    console.log (multiplicator(5, 10));
+
+Cette fonction permet de multiplier une première valeur 'x' par une deuxième 'y'.
+
+
+## Les différentes propriétés array.prototype
+
+Pour faire des tableaux en Javascript, on a recours a différentes propriétés  
+selon nos besoins:
+
+### La méthode map()
+
+### La méthode filter()
+
+### La méthode sort()
+
+### La méthode reduce()
+
+### La méthode forEach()
+
+
+
+
+
