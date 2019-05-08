@@ -7,7 +7,7 @@ pour les serveurs comme avec l'utilisation de Node.js.
 
 ## Syntaxe
 
-Les fonctions retournent les valeurs à l'aide du mot-clé return. [return] termine l'exécution de la fonction et renvoie  
+Les fonctions retournent les valeurs à l'aide de [return], qui termine l'exécution de la fonction et renvoie  
 la valeur spécifiée à l'endroit où elle a été appelée.  
 Une erreur courante est d'oublier le mot-clé de retour, mais sans l'utiliser dans les fonctions, l'information ne nous est pas renvoyée. 
 
@@ -113,13 +113,13 @@ Une boucle est un outil de programmation qui est utilisé pour répéter un ense
 
 La boucle "For" 
 
-    for (let i = 0; i < 4; i += 1) {
+    for (let i = 0; i < 4; i= i+1) {
      console.log(i);
     };
 
-    // `let i = 0` l'initialisation (où commencer la boucle)
-    // `i < 4`     la condition d'arrêt (quand commencer la boucle)
-    // `i += 1`    l'état d'itération ( met à jour l'itérateur chaque fois que la boucle est terminée)
+    // let i = 0 l'initialisation (où commencer la boucle)
+    // i < 4   la condition d'arrêt (quand arrêter la boucle)
+    // i++   l'état d'itération ( met à jour l'itérateur chaque fois que la boucle est terminée)
 
     // résultat: 0, 1, 2, 3
 
