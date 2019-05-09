@@ -6,21 +6,21 @@ Le CSS ("Cascading Style Sheets") est un langage de balises. Il est principaleme
 fichiers HTML (personnaliser la mise en page d'un site web).
 
 ## Syntaxe
-    color                           couleur (de l'élément désigné)
-    text-align                      alignement de texte
-    background-color                couleur de fond     
-    text-decoration                 décoration de texte (souligner)
-    border                          bordure
-    width                           largeur
-    height                          hauteur
-    box-shadow                      ombre de la "boite"
-    font-style                      style de police
+    color                                          couleur (de l'élément désigné)
+    text-align                                     alignement de texte
+    background-color                               couleur de fond     
+    text-decoration                                décoration de texte (souligner)
+    border                                         bordure
+    width                                          largeur
+    height                                         hauteur
+    box-shadow                                     ombre de la "boite"
+    font-style                                     style de police
 
-## Flexbox
+## Flexbox CSS
 
 ### Définition:
 
-Le flexbox est aujourd’hui l’outil le plus puissant et simple pour créer des structures responsives et flexibles,  
+Le flexbox est un excellent outil pour créer des structures responsives et flexibles,  
 c’est-à-dire pour positionner et aligner des éléments HTML sans même connaitre leur dimension à priori.
   
   **En effet, le Flexbox va nous permettre de gérer précisément** :
@@ -32,9 +32,37 @@ c’est-à-dire pour positionner et aligner des éléments HTML sans même conna
   
 ### Syntaxe
 
-**On a deux types de propriétés principales**:
+On a deux types d'éléments principaux en Flexbox CSS:
 
->1. Le *container* qui est l'élément parent.
->
->2. Les *items* (éléments enfants) à l'intérieur du container, qui peuvent être pris comme des blocs.
+> 1. Le **container**, qui est le corps principal  
+> 2. Les **items**, qui sont contenus dans le premier
+
+#### Le *container* (l'élément parent)  
+
+
+Les différentes propriétés du **container** sont:
+
+> display
+
+    .container {
+      display: flex;
+    }
+
+Il permet d'initialiser le flex container
+
+> flex-direction
+
+    .container {
+      flex-direction: row | row-reverse | column | column-reverse;
+    }
+    
+Il permet de définir la direction des items      
+
+
+#### Les *items* (les éléments enfants)  
+  
+
+Les différentes propriétés des **items** sont:
+
+
 
