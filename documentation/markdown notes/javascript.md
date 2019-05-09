@@ -111,29 +111,41 @@ Une boucle est un outil de programmation qui est utilisé pour répéter un ense
 
 ### Syntaxe
 
-> **La boucle "For"**
+#### La boucle "For"
 
 *For* déclare des instructions de bouclage avec trois informations importantes séparées par des points-virgules. 
     
-    }
-    const people = []                                              // let i = 0   l'initialisation (où commencer la boucle)                                                                                                                         
-    for (let i = 0; i < 4; i= i+1) {                               // i < 4  la condition d'arrêt (quand arrêter la boucle) 
-     // bloc de données à exécuter                                 // i++ l'état d'itération ( met à jour l'itérateur chaque fois que la boucle est terminée)
+  
+    const people = []                                                                                                                                                                       
+    for (let i = 0; i < 4; i= i+1) {                                
+     // bloc de données à exécuter 
+     }                                
     console.log (people);  // résultat: [0, 1, 2, 3]
-           
+    
+> Légende 
+   
+    let i = 0   l'initialisation (où commencer la boucle)
+    i < 4  la condition d'arrêt (quand arrêter la boucle) 
+    i++ l'état d'itération ( met à jour l'itérateur chaque fois que la boucle est terminée)   
+              
 
-> **La boucle "While"**
+#### La boucle "While"
 
 Dans la boucle *While*, la condition est évaluée avant d'exécuter l'instruction contenue dans la boucle.
     
     const i = 0;                                                                                                                         
-    }
-    while (i < 5) {                                                          // i < 5  est la condition
-    i++;                                                                     // i++    est l'incrémentation (dans l'instruction)
+    while (i < 5) {                                                          
+    i++;      
+    }                                                              
     console.log(i);
 
+> Légende
+
+    i < 5  est la condition
+    i++    est l'incrémentation (dans l'instruction)
 
 *While* crée une boucle qui est exécutée tant qu'une condition spécifiée reste vraie.  
 La boucle continuera de **tourner à l'infini** jusqu'à ce que la condition soit évaluée à faux.  
 Une mauvaise manip' peut rapidement tourner au cauchemar et aller jusqu'à la destrution de la carte-mère.  
-La boucle *While* est pour cette raison **à proscrire**.     
+La boucle *While* est pour cette raison **à proscrire**.    
+
