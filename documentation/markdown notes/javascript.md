@@ -115,12 +115,12 @@ Une boucle est un outil de programmation qui est utilisé pour répéter un ense
 
 *For* déclare des instructions de bouclage avec trois informations importantes séparées par des points-virgules. 
     
-  
-    const people = []                                                                                                                                                                       
-    for (let i = 0; i < 4; i= i+1) {                                
-     // bloc de données à exécuter 
-     }                                
-    console.log (people);  // résultat: [0, 1, 2, 3]
+    const people = []  
+    for (let i = 0; i < 4; i= i+1) {  
+    // bloc de données à exécuter  
+    }  
+    console.log (people);  // résultat: [0, 1, 2, 3]  
+    
     
 > Légende 
    
@@ -131,14 +131,14 @@ Une boucle est un outil de programmation qui est utilisé pour répéter un ense
 
 #### La boucle "While"
 
-Dans la boucle *While*, la condition est évaluée avant d'exécuter l'instruction contenue dans la boucle.
-    
-    const i = 0;                                                                                                                         
-    while (i < 5) {                                                          
-    i++;      
-    }                                                              
-    console.log(i);
+Dans la boucle *While*, la condition est évaluée avant d'exécuter l'instruction contenue dans la boucle.  
 
+    const i = 0;  
+    while (i < 5) {  
+    i++;  
+    }  
+    console.log(i);   
+   
 > Légende
 
     i < 5  est la condition
@@ -149,3 +149,10 @@ La boucle continuera de **tourner à l'infini** jusqu'à ce que la condition soi
 Une mauvaise manip' peut rapidement tourner au cauchemar et aller jusqu'à la destrution de la carte-mère.  
 La boucle *While* est pour cette raison **à proscrire**.    
 
+   
+    
+    
+        
+    
+    
+    
