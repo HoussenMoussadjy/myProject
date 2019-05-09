@@ -7,7 +7,7 @@ pour les serveurs comme avec l'utilisation de Node.js.
 
 ## Syntaxe
 
-Les fonctions retournent les valeurs à l'aide de [return], qui termine l'exécution de la fonction et renvoie  
+Les fonctions retournent les valeurs à l'aide de [**return**], qui termine l'exécution de la fonction et renvoie  
 la valeur spécifiée à l'endroit où elle a été appelée.  
 Une erreur courante est d'oublier le mot-clé de retour, mais sans l'utiliser dans les fonctions, l'information ne nous est pas renvoyée. 
 
@@ -23,11 +23,11 @@ Une erreur courante est d'oublier le mot-clé de retour, mais sans l'utiliser da
  
  
 Les déclarations de fonction sont construites à partir du mot-clé de la fonction, du nom de la fonction,  
-d'une liste de paramètres séparés par des virgules et entourés d'un ensemble de parenthèses (),  
-et d'un corps de fonction enfermé dans un ensemble de crochets {}. 
+d'une liste de paramètres séparés par des virgules et entourés d'un ensemble de parenthèses ( ),  
+et d'un corps de fonction enfermé dans un ensemble de crochets { }. 
  
-     function add(num1, num2) {
-       return num1 + num2;
+     function add(x, y) {
+       return x + y;
      }
  
        
@@ -41,39 +41,39 @@ Je veux une fonction qui me permette de multiplier 5 par 10:
    
     console.log (multiplicator(5, 10));
 
-Cette fonction permet de multiplier une première valeur [x] par une deuxième [y].
+Cette fonction permet de multiplier une première valeur **x** par une deuxième **y**.
 
 
 ## Les différentes propriétés
 
-Pour faire des tableaux en Javascript, on a recours a différentes propriétés  
+Pour faire des tableaux ou des boucles en Javascript, on peut avoir recours à différentes méthodes  
 selon nos besoins:
 
-### La méthode map()
+### La méthode *.map()*
 
-Le map() permet de créer un nouveau tableau et d'y modiifier les éléments sélectionnés.
+> Le map() permet de créer un nouveau tableau et d'y modifier les éléments sélectionnés.
 
-### La méthode filter()
+### La méthode *.filter()*
 
-Le filter() permet de filtrer ou d'enlever des éléments.
+> Le filter() permet de filtrer ou d'enlever des éléments.
 
-### La méthode sort()
+### La méthode *.sort()*
 
-Le sort() permet de trier ou de classer des éléments.
+> Le sort() permet de trier ou de classer des éléments.
 
-### La méthode reduce()
+### La méthode *.reduce()*
 
-Le reduce() permet de prendre des éléments de plusieurs tableaux pour les rassembler dans un seul.
+> Le reduce() permet de prendre des éléments de plusieurs tableaux pour les rassembler dans un seul.
 
-### La méthode push()
+### La méthode *.push()*
 
-Le push() permet d'ajouter un ou plusieurs éléments à la fin d'un tableau.
+> Le push() permet d'ajouter un ou plusieurs éléments à la fin d'un tableau.
 
-### La méthode length()
+### La méthode *.length()*
 
-Le length() permet d'afficher la longueur d'un tableau ou d'une chaine de caractères.
+> Le length() permet d'afficher la longueur d'un tableau ou d'une chaine de caractères.
 
-## Les arrays (tableaux)
+## Les arrays (*tableaux*)
 
 ### Définition
 
@@ -98,12 +98,12 @@ Les tableaux sont créés à l'aide de crochets, les éléments individuels éta
     let words = ['Hello', 'there'];
 
     words[0] = 'Hi';
-    console.log(words); // ['Hi', 'there']
+    console.log (words); // ['Hi', 'there']
     
-Les éléments de tableau sont classés par valeurs d'index, à partir de [0] comme premier index d'élément.  
-Ils peuvent être modifiés en accédant à l'élément (ex: par leur index) et en l'affectant à une nouvelle valeur.  
+Les éléments de tableau sont classés par valeurs d'index, à partir de **0** comme premier index d'élément.  
+Ils peuvent être modifiés en accédant à l'élément (comme ici par leur index) et en l'affectant à une nouvelle valeur.  
     
-## Les loops (boucles)
+## Les loops (*boucles*)
 
 ### Définition
 
@@ -111,15 +111,29 @@ Une boucle est un outil de programmation qui est utilisé pour répéter un ense
 
 ### Syntaxe
 
-La boucle "For" 
+> **La boucle "For"**
 
-    for (let i = 0; i < 4; i= i+1) {
-     console.log(i);
-    };
+*For* déclare des instructions de bouclage avec trois informations importantes séparées par des points-virgules. 
+    
+    }
+    const people = []                                              // let i = 0   l'initialisation (où commencer la boucle)                                                                                                                         
+    for (let i = 0; i < 4; i= i+1) {                               // i < 4  la condition d'arrêt (quand arrêter la boucle) 
+     // bloc de données à exécuter                                 // i++ l'état d'itération ( met à jour l'itérateur chaque fois que la boucle est terminée)
+    console.log (people);  // résultat: [0, 1, 2, 3]
+           
 
-    // let i = 0 l'initialisation (où commencer la boucle)
-    // i < 4   la condition d'arrêt (quand arrêter la boucle)
-    // i++   l'état d'itération ( met à jour l'itérateur chaque fois que la boucle est terminée)
+> **La boucle "While"**
 
-    // résultat: 0, 1, 2, 3
+Dans la boucle *While*, la condition est évaluée avant d'exécuter l'instruction contenue dans la boucle.
+    
+    const i = 0;                                                                                                                         
+    }
+    while (i < 5) {                                                          // i < 5  est la condition
+    i++;                                                                     // i++    est l'incrémentation (dans l'instruction)
+    console.log(i);
 
+
+*While* crée une boucle qui est exécutée tant qu'une condition spécifiée reste vraie.  
+La boucle continuera de **tourner à l'infini** jusqu'à ce que la condition soit évaluée à faux.  
+Une mauvaise manip' peut rapidement tourner au cauchemar et aller jusqu'à la destrution de la carte-mère.  
+La boucle *While* est pour cette raison **à proscrire**.     
