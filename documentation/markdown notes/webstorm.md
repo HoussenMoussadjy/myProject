@@ -9,15 +9,16 @@ En tant que développeur web il nous sert également à se mettre en lien avec d
  
 ## Les raccourcis clavier  
   
-    Ctrl + D:                 Dupliquer une ligne de code
-    Ctrl + X:                 Couper
-    Ctrl + C:                 Copier
-    Ctrl + V:                 Coller
-    Ctrl + Z:                 Faire un retour en arrière
-    Shift + Ctrl + Z:         Annuler le retour en arrière
-    Alt + Ctrl + L:           Remettre son code en ordre
-    Shift + flèches:          Sélectionner du texte
-    Shift + Fin:              Sélectionner une ligne de code (se mettre au début de la ligne)
+    Ctrl + D:                     Dupliquer une ligne de code
+    Ctrl + X:                     Couper
+    Ctrl + C:                     Copier
+    Ctrl + V:                     Coller
+    Ctrl + Z:                     Faire un retour en arrière
+    Shift + Ctrl + Z:             Annuler le retour en arrière
+    Alt + Ctrl + L:               Remettre son code en ordre
+    Shift + Flèches:              Sélectionner du texte
+    Shift + Fin:                  Sélectionner une ligne de code (se mettre au début de la ligne)
+    Alt + Shift + Flèches:        Déplacer une ligne de haut en bas
 
 
 
