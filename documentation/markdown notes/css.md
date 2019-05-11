@@ -39,7 +39,6 @@ On a deux types d'éléments principaux en Flexbox CSS:
 
 #### Le *container* (l'élément parent)  
 
-
 Les différentes propriétés du **container** sont:
 
 > display
@@ -58,11 +57,30 @@ Il permet d'initialiser le flex container
     
 Il permet de définir la direction des items      
 
+> justify-content
+
+    .container {
+      justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+    }
+    
+> align-items
+
+    .container {
+      align-items: stretch | flex-start | flex-end | center | baseline;
+    }
+
+> align-content
+
+    .container {
+      align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+    }
 
 #### Les *items* (les éléments enfants)  
   
-
 Les différentes propriétés des **items** sont:
 
+> flex-grow
 
-
+    .item {
+      flex-grow: <number>; /* default 0 */
+    }
