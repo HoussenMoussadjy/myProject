@@ -1,5 +1,5 @@
 # Dictée
 
-ça m'intéressait, j'avais envie de devenir sa secrétaire. Il travaille sans arrêt mais il a une belle voix cette voix que j'ai aimée par dessus tout. 
-Ca m'interpelle, quelle voix allons-nous prendre? notre chiffre d'affaire n'est vraiment pas bon, d'autant plus que la semaine dernière nous n'avons pas eu de clients, quelle qu'est été nos relations nous ne nous en sortirons pas sans dommages.  
-Les fruits qui ont été ramassés au sol ne devront pas être mangé. Ainsi nous aurons de quoi nous nourrir jusqu'à la fin de l'année. Il me donne sa confiance, il n'en a jamais été avare. Il m'aime davantage que son prédécesseur. En tant que femme j'en suis ravie. Hier, j'ai fait une erreur je lui ai dit: "au temps pour moi, c'est de ma faute".
+Ça m'intéressait, j'avais envie de devenir sa secrétaire. Il travaille sans arrêt mais il a une belle voix. Cette voix que j'ai aimée par dessus tout. 
+Ça m'interpelle, quelle voie allons-nous prendre ? Notre chiffre d'affaires n'est vraiment pas bon, d'autant plus que la semaine dernière nous n'avons pas eu de clients, quelles qu'est été nos relations nous ne nous en sortirons pas sans dommages.  
+Les fruits qui ont été ramassés au sol ne devront pas être mangés. Ainsi nous aurons de quoi nous nourrir jusqu'à la fin de l'année. Il me donne sa confiance, il n'en a jamais été avare. Il m'aime davantage que son prédécesseur. En tant que femme j'en suis ravie. Hier, j'ai fait une erreur je lui ai dit: "au temps pour moi, c'est de ma faute".
