@@ -149,6 +149,23 @@ La boucle continuera de **tourner à l'infini** jusqu'à ce que la condition soi
 Une mauvaise manip' peut rapidement tourner au cauchemar et aller jusqu'à la destrution de la carte-mère.  
 La boucle *While* est pour cette raison **à proscrire**.    
 
+## Les objects *(objets)*
+
+### Définition
+
+Un objet est un ensemble de propriétés, dont une propriété est une association de (key + value).
+
+### Syntaxe
+   
+## Les class *(classes)* 
+
+### Définition
+
+JavaScript supporte le concept de classes comme syntaxe pour créer des objets.  
+Les classes spécifient les propriétés partagées et les méthodes que les objets produisent à partir de la classe.
+
+### Syntaxe
+
    
     
     
