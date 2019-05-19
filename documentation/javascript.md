@@ -43,6 +43,34 @@ Je veux une fonction qui me permette de multiplier 5 par 10:
 
 Cette fonction permet de multiplier une première valeur **x** par une deuxième **y**.
 
+## Les types
+
+Il y a 6 types en JavaScript, dont 5 sont de types primitifs:
+
+> **Number** :
+
+peut être un entier ou un nombre à virgule ou même les valeurs spécifiques NaN(Not A Number).
+
+> **String** :
+
+contient une chaine de caractères (du texte).
+
+> **Boolean** :
+
+renvoie deux uniques valeurs : true et false.
+
+> **Null** :
+
+indique qu'une valeur existe mais qu'elle ne contient rien, sa valeur est nulle.
+
+> **Undefined** :
+
+indique qu'une donnée ou valeur n'a pas été déclarée.
+
+> **Object**:
+
+Un "object" peut contenir un ou plusieurs types primitifs.
+
 
 ## Les différentes propriétés
 
@@ -162,9 +190,17 @@ Un objet est un ensemble de propriétés, dont une propriété est une associati
 ### Définition
 
 JavaScript supporte le concept de classes comme syntaxe pour créer des objets.  
-Les classes spécifient les propriétés partagées et les méthodes que les objets produisent à partir de la classe.
+Les classes spécifient les propriétés partagées et les méthodes que les objets produisent à partir de la classe.  
+Dans les classes, les méthodes remplacent les fonctions.
 
 ### Syntaxe
+
+
+## TypeScript
+
+### Définition
+
+
 
    
     
