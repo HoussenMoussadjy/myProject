@@ -182,8 +182,14 @@ La boucle *While* est pour cette raison **à proscrire**.
 ### Définition
 
 Un objet est un ensemble de propriétés, dont une propriété est une association de (key + value).
+Un tableau ou une fonction peuvent être des objets.
 
 ### Syntaxe
+
+    const result = Object.values(hostels)
+    .sort((hostel1, hostel2) => hostel2.roomNumbers - hostel1.roomNumbers)
+    .map(hostel => hostel.name);
+    console.log(result);
    
 ## Les class *(classes)* 
 
@@ -195,12 +201,26 @@ Dans les classes, les méthodes remplacent les fonctions.
 
 ### Syntaxe
 
+    class MaClasse {
+    // méthodes de classe
+    constructor() { ... }
+    method1() { ... }
+    method2() { ... }
+    method3() { ... }
+    ...
+    }
+*New MyClass()* crée un nouvel objet avec toutes les méthodes listées.
+La méthode *constructor()* permet d'initialiser l'objet ici.
 
 ## TypeScript
 
 ### Définition
 
-
+TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but  
+d'améliorer et de sécuriser la production du code JavaScript, qui s'est révélé un langage de programmation avec pleins  
+d'incohérences.  
+C'est un langage qui est assez typé comparé à JavaScript qui est assez permissif au niveau du typage de données.  
+TypeScript se révèle comme un JavaScript amélioré et apportant beaucoup plus de fonctionnalités.
 
    
     
