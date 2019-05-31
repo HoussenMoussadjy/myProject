@@ -1,0 +1,26 @@
+{
+  "name": "nodealone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc",
+    "tsconfig": "tsc -w -p tsconfig.json",
+    "node": "nodemon ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.1",
+    "body-parser": "^1.19.0",
+    "nodemon": "^1.19.1",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^8.0.0"
+  }
+}

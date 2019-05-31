@@ -235,5 +235,3 @@ d'améliorer et de sécuriser la production du code JavaScript, qui s'est révé
 d'incohérences.  
 C'est un langage qui est assez typé comparé à JavaScript qui est assez permissif au niveau du typage de données.  
 TypeScript se révèle comme un JavaScript amélioré et apportant beaucoup plus de fonctionnalités.
-
- 
