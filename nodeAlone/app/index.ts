@@ -42,23 +42,23 @@ app.post('/addUsers', async (req, res) =>{
 
 });
 
-app.delete('/removeUsers', async (req, res) =>{
-    const deleteDoc = await db.collection('users').doc('HzZPUvexG4uARhARS7Ls').delete();
-    res.send('deleted!')
+app.delete('/removeUsers/:id', async (req, res) =>{
+    const deleteDoc = await db.collection('users').doc(req.params.id).delete();
+    res.send('deleted !')
 });
 
-app.put('/changeAllUsers', async (req, res) =>{
+app.put('/changeAllUsers/:id', async (req, res) =>{
     const addChange = req.body;
 
-    const userRef = await db.collection('users').doc('cNhF1mXlgEJG3vIGdpRG');
+    const userRef = await db.collection('users').doc(req.params.id);
     const updateSingle = userRef.update(req.body);
     res.send('all changed !')
 });
 
-app.patch('/changeSomeUsers', async (req, res) =>{
+app.patch('/changeSomeUsers/:id', async (req, res) =>{
     const addChange = req.body;
 
-    const userRef = await db.collection('users').doc('cNhF1mXlgEJG3vIGdpRG');
+    const userRef = await db.collection('users').doc(req.params.id);
     const updateSingle = userRef.update(req.body);
     res.send('changed !')
 });
