@@ -42,16 +42,19 @@ app.post('/addUsers', async (req, res) =>{
 
 });
 
+
+
 app.delete('/removeUsers/:id', async (req, res) =>{
     const deleteDoc = await db.collection('users').doc(req.params.id).delete();
-    res.send('deleted !')
+    res.send('deleted !');
 });
+
+
+
 
 app.put('/changeAllUsers/:id', async (req, res) =>{
     const addChange = req.body;
-
-    const userRef = await db.collection('users').doc(req.params.id);
-    const updateSingle = userRef.update(req.body);
+    const userRef = await db.collection('users').doc(req.params.id).update(addChange);
     res.send('all changed !')
 });
 
@@ -62,7 +65,6 @@ app.patch('/changeSomeUsers/:id', async (req, res) =>{
     const updateSingle = userRef.update(req.body);
     res.send('changed !')
 });
-
 
 app.listen(4000,  () => {
     console.log('Example app listening on port 4000!')
