@@ -2,3 +2,24 @@
     {{ users | json }}
   </li>
 
+  <label>
+    firstname:
+    <input type="text" [formControl]="users">
+  </label>
+
+  <label>
+    lastname:
+    <input type="text" [formControl]="users">
+  </label>
+ <label>
+    children:
+    <input type="text" [formControl]="users">
+  </label>
+ <label>
+    age:
+    <input type="text" [formControl]="users">
+  </label>
+
+  <p>
+    <button (click)="submit()">montrer</button>
+  </p>
