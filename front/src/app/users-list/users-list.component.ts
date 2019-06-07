@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {Observable} from "rxjs";
 import {tap} from "rxjs/operators";
 import {HttpClient} from "@angular/common/http";
 import {UserModel} from "../model/user.model";
-import {catchClause} from "babel-types";
-import {cssScannerError} from "codelyzer/angular/styles/cssLexer";
+import {FormBuilder, FormGroup} from '@angular/forms';
+
 
 @Component({
   selector: 'app-users-list',
@@ -14,35 +14,55 @@ import {cssScannerError} from "codelyzer/angular/styles/cssLexer";
 })
 export class UsersListComponent implements OnInit {
 
-  users: UserModel[];
-  users$: Observable<UserModel[]>;
+  userForm: FormGroup;
 
-  constructor(private http: HttpClient) { }
+  constructor(private formBuilder: FormBuilder) { }
+
+  /*  users: UserModel[];
+    users$: Observable<UserModel[]>;
+
+    constructor(private http: HttpClient) {
+    }*/
 
   ngOnInit() {
+    this.initForm();
+  }
 
-    this.users$ = this.http.get<UserModel[]>('http://localhost:4000/users');
-    this.users$
-      .pipe(
-        tap(x => console.log(x)),
-        tap((users: UserModel[]) => this.users = users)).subscribe();
+  initForm() {  this.userForm = this.formBuilder.group({
+    firstName: '',
+    lastName: '',
+    children: '',
+    age: ''
+  });
 
-/*
-    this.http.post<UserModel[]>('http://localhost:4000/addUsers', {
-      firstname: 'toto',
-      lastname: 'tata',
-      children: true,
-      age: 19,
-    })
-      .subscribe();
-*/
+  }
 
-/*
-    return this.http.put<UserModel[]>('http://localhost:4000/changeAllUsers/7Q9HaTDW1oQryqnjTCAD', {"lastname": 'ronald'})
-      .pipe()
-      .subscribe();*/
+}
 
-    // Delete method
-    return this.http.delete<UserModel[]>('http://localhost:4000/removeUsers/u6TMCDNV5MeXvHeFQorb').pipe().subscribe();
-  }}
+
+    /*  {
+        this.users$ = this.http.get<UserModel[]>('http://localhost:4000/users');
+        this.users$
+          .pipe(
+            tap(x => console.log(x)),
+            tap((users: UserModel[]) => this.users = users)).subscribe();
+
+            this.http.post<UserModel[]>('http://localhost:4000/addUsers', {
+              firstname: 'toto',
+              lastname: 'tata',
+              children: true,
+              age: 19,
+            })
+              .subscribe();
+
+            return this.http.put<UserModel[]>('http://localhost:4000/changeAllUsers/7Q9HaTDW1oQryqnjTCAD', {"lastname": 'ronald'})
+              .pipe()
+              .subscribe();
+
+            // Delete method
+            return this.http.delete<UserModel[]>('http://localhost:4000/removeUsers/u6TMCDNV5MeXvHeFQorb').pipe().subscribe();
+             }
+    */
+
+
 
