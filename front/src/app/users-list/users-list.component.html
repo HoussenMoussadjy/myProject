@@ -2,6 +2,14 @@
     {{ users | json }}
   </li>
 
+  <form [formGroup]="userForm">
+
+    <input type="text" formControlName="firstName" required>
+
+    <p>
+      Form Status: {{ userForm.status }}
+    </p>
+
   <label>
     firstname:
     <input type="text" [formControl]="users">
@@ -21,5 +29,5 @@
   </label>
 
   <p>
-    <button (click)="submit()">montrer</button>
+    <button (click)="submit()">AFFICHER</button>
   </p>
