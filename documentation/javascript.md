@@ -223,6 +223,7 @@ Dans les classes, les méthodes remplacent les fonctions.
     method3() { ... }
     ...
     }
+    
 *New MyClass()* crée un nouvel objet avec toutes les méthodes listées.  
 La méthode *constructor()* permet d'initialiser l'objet ici.
 
