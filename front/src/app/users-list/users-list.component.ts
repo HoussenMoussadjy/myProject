@@ -1,10 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from "rxjs";
 import {tap} from "rxjs/operators";
 import {HttpClient} from "@angular/common/http";
 import {UserModel} from "../model/user.model";
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-
 
 @Component({
   selector: 'app-users-list',
@@ -13,40 +11,32 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 })
 export class UsersListComponent implements OnInit {
 
-  userForm: FormGroup;
+    users: UserModel[];
+    userForm: FormGroup;
 
-  users: UserModel[];
-  users$: Observable<UserModel[]>;
+  constructor(private http: HttpClient, fb: FormBuilder) {}
 
-  constructor(private http: HttpClient, fb: FormBuilder) {
-  }
-  }
-
-  ngOnInit()
-{
+  ngOnInit() void {
+    this.showUser().subscribe();
     this.initForm();
-  }
-
-  initForm()
-    {
-      this.userForm = this.formBuilder.group({
-        firstName: '',
-        lastName: '',
-        children: '',
-        age: ''
-      });
-
-    }
-
 }
 
+    showUser() {
+      return this.http.get<UserModel[]>('http://localhost:4000/users')
+        .pipe(
+          tap(users => this.users = users),
+        );
+    }
 
-    {
-        this.users$ = this.http.get<UserModel[]>('http://localhost:4000/users');
-        this.users$
-          .pipe(
-            tap(x => console.log(x)),
-            tap((users: UserModel[]) => this.users = users)).subscribe();
+    initForm() {
+    this.userForm = this.fb.group({
+      firstName: ['', [Validators.required],
+      lastName: [''],
+      children: [''],
+      age: ['']
+    })
+  }
+    }
 
 /*
           this.http.post<UserModel[]>('http://localhost:4000/addUsers', {
@@ -67,10 +57,7 @@ export class UsersListComponent implements OnInit {
   */
 
     /*  userForm = this.fb.group({
-        firstName: ['', Validators.required],
-        lastName: [''],
-        children: [''],
-        age: ['']
+
       })
 */
 
