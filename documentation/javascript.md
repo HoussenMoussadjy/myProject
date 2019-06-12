@@ -20,7 +20,7 @@ Une erreur courante est d'oublier le mot-clé de retour, mais sans l'utiliser da
     function sum(num1, num2) {
       num1 + num2; 
     }   
- 
+  
  
 Les déclarations de fonction sont construites à partir du mot-clé de la fonction, du nom de la fonction,  
 d'une liste de paramètres séparés par des virgules et entourés d'un ensemble de parenthèses ( ),  
@@ -149,8 +149,7 @@ Ils peuvent être modifiés en accédant à l'élément (comme ici par leur inde
 
 ### Définition
 
-Une boucle est un outil de programmation qui est utilisé pour répéter un ensemble d'instructions.
-
+Une boucle est un outil de programmation qui est utilisé pour répéter un ensemble d'instructions.1
 ### Syntaxe
 
 #### La boucle "For"
