@@ -3,7 +3,7 @@ import {tap} from "rxjs/operators";
 import {HttpClient} from "@angular/common/http";
 import {UserModel} from "../model/user.model";
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {hostels} from "../../../../node/functions/src/hotel";
+
 
 @Component({
   selector: 'app-users-list',
@@ -16,7 +16,12 @@ export class UsersListComponent implements OnInit {
   userForm: FormGroup;
   isLoading = false;
 
-  constructor(private http: HttpClient, private fb: FormBuilder) {
+  constructor(private http: HttpClient,
+              private fb: FormBuilder) {
+  }
+
+  get name() {
+    return this.userForm.get('firstName')
   }
 
   ngOnInit() {
@@ -33,16 +38,16 @@ export class UsersListComponent implements OnInit {
 
   postUser() {
     this.isLoading = true;
-    this.http.post<UserModel[]>('http://localhost:4000/addUsers', user)
+    this.http.post<UserModel[]>('http://localhost:4000/addUsers', this.userForm.value)
     .pipe(
      tap(x => console.log(x)),
      tap(() => this.isLoading = false),
-)
+    )
   .subscribe();
   }
 
   submitForm() {
-    console.log(this.userForm.value);
+    console.log(this.postUser());
   }
 
   initForm() {
@@ -56,7 +61,6 @@ export class UsersListComponent implements OnInit {
 }
 
 /*
-
           return this.http.put<UserModel[]>('http://localhost:4000/changeAllUsers/7Q9HaTDW1oQryqnjTCAD', {"lastname": 'ronald'})
             .pipe()
             .subscribe();

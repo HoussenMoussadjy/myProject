@@ -35,11 +35,8 @@ app.get('/users', async (req, res) =>{
 });
 
 app.post('/addUsers', async (req, res) =>{
-    const addPost = req.body;
-
-    const addNewHostel = await ref.add(addPost);
-    res.send('posted !').status(201);
-
+    const addNewUser = await ref.add(req.body);
+    res.status(201).send(addNewUser);
 });
 
 app.delete('/removeUsers/:id', async (req, res) =>{
