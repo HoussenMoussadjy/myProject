@@ -30,9 +30,8 @@ app.get('/users', (req, res) => __awaiter(this, void 0, void 0, function* () {
     res.status(200).send(userOb);
 }));
 app.post('/addUsers', (req, res) => __awaiter(this, void 0, void 0, function* () {
-    const addPost = req.body;
-    const addNewHostel = yield ref.add(addPost);
-    res.send('posted !').status(201);
+    const addNewUser = yield ref.add(req.body);
+    res.status(201).send(addNewUser);
 }));
 app.delete('/removeUsers/:id', (req, res) => __awaiter(this, void 0, void 0, function* () {
     const deleteDoc = yield db.collection('users').doc(req.params.id).delete();
