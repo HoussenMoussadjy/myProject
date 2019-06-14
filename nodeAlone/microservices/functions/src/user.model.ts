@@ -3,5 +3,6 @@ export interface UserModel {
     lastname: string,
     children: boolean,
     age: number,
-    uid: any
+    uid: string,
+    created: any
 }
