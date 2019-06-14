@@ -11,6 +11,7 @@ exports.on_user_created = functions.firestore
 
         const newUser: UserModel= snap.data() as UserModel;
         newUser.uid = snap.id;
+        newUser.created = admin.firestore.FieldValue.serverTimestamp();
         return snap.ref.set(newUser)
 
     });
