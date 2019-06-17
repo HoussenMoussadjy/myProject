@@ -61,10 +61,14 @@ export class UsersListComponent implements OnInit {
 }
 
 /*
-          return this.http.put<UserModel[]>('http://localhost:4000/changeAllUsers/7Q9HaTDW1oQryqnjTCAD', {"lastname": 'ronald'})
-            .pipe()
-            .subscribe();
+  changeUser() {
+    this.http.put<UserModel[]>('http://localhost:4000/changeAllUsers')
+    .pipe()
+    .subscribe();
+}
+*/
 
+/*
           return this.http.delete<UserModel[]>('http://localhost:4000/removeUsers/u6TMCDNV5MeXvHeFQorb').pipe().subscribe();
            }
   */
