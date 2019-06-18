@@ -1,3 +1,30 @@
-<p>
-  create-identity works!
-</p>
+<div *ngIf="isLoading">chargement en cours...</div>
+
+<div>{{users | json}}</div>
+
+<form [formGroup]="userForm" (ngSubmit)="submitForm()">
+
+  <div *ngIf="userForm.invalid && userForm.dirty">Attention il y a une erreur</div>
+
+  <ng-container *ngIf="!isLoading">
+    <label>
+      firstname
+      <input type="text" required formControlName="firstName">
+      <div *ngIf="name.invalid && name.dirty">il y a une erreur sur ce champ</div>
+    </label>
+    <label>
+      lastname
+      <input type="text" required formControlName="lastName">
+    </label>
+    <label>
+      children
+      <input type="boolean" required formControlName="children">
+    </label>
+    <label>
+      age
+      <input type="number" required formControlName="age">
+    </label>
+    <button (click)="userForm.reset()" type="button">RESET</button>
+    <button type="submit">AFFICHER</button>
+  </ng-container>
+</form>
