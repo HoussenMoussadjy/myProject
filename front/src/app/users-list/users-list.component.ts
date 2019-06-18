@@ -16,7 +16,7 @@ export class UsersListComponent implements OnInit {
   userForm: FormGroup;
   isLoading = false;
 
-  constructor(private http: HttpClient,
+  constructor(private httpClient: HttpClient,
               private fb: FormBuilder) {
   }
 
@@ -30,7 +30,7 @@ export class UsersListComponent implements OnInit {
   }
 
   showUser() {
-    return this.http.get<UserModel[]>('http://localhost:4000/users')
+    return this.httpClient.get<UserModel[]>('http://localhost:4000/users')
       .pipe(
         tap(users => this.users = users),
       );
@@ -38,7 +38,7 @@ export class UsersListComponent implements OnInit {
 
   postUser() {
     this.isLoading = true;
-    this.http.post<UserModel[]>('http://localhost:4000/addUsers', this.userForm.value)
+    this.httpClient.post<UserModel[]>('http://localhost:4000/addUsers', this.userForm.value)
     .pipe(
      tap(x => console.log(x)),
      tap(() => this.isLoading = false),

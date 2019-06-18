@@ -8,7 +8,7 @@ const routes: Routes = [
   },
 {
     path: 'list-identity',
-    loadChildren: './list-identity/list-identity.module#CreateIdentityModule#ListIdentityModule'
+    loadChildren: './list-identity/list-identity.module#ListIdentityModule'
   },
 ];
 

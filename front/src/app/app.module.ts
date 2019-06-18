@@ -18,7 +18,6 @@ import { ListIdentityComponent } from './list-identity/list-identity.component';
     HeaderComponent,
     FooterComponent,
     UsersListComponent,
-    CreateIdentityComponent,
     ListIdentityComponent
   ],
   imports: [
