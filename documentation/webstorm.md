@@ -15,11 +15,12 @@ En tant que développeur web il nous sert également à se mettre en lien avec d
     Ctrl + V:                     Coller
     Ctrl + Z:                     Faire un retour en arrière
     Shift + Ctrl + Z:             Annuler le retour en arrière
+    Ctrl + Alt + Shift + J:       Créer plusieurs occurences sur un élément
     Alt + Ctrl + L:               Remettre son code en ordre
     Shift + Flèches:              Sélectionner du texte
     Shift + Fin:                  Sélectionner une ligne de code (se mettre au début de la ligne)
     Alt + Shift + Flèches:        Déplacer une ligne de haut en bas
-
+    
 
 
 
