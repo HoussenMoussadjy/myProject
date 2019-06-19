@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {UserModel} from "../model/user.model";
+import {tap} from "rxjs/operators";
+import {IdentityModel} from "../model/identity.model";
 
 @Component({
   selector: 'app-create-identity',
@@ -7,9 +12,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateIdentityComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
+  identity: IdentityModel[];
+  identityForm: FormGroup;
+
+  constructor(private httpClient: HttpClient,
+              private fb: FormBuilder) {
   }
 
+  ngOnInit() {
+    this.initForm();
+  }
+
+  postIdentity(identity: IdentityModel) {
+    this.httpClient.post<IdentityModel[]>('http://localhost:4000/addUsers', identity)
+      .pipe()
+      .subscribe();
+  }
+
+  submitForm() {
+    this.postIdentity(this.identityForm.value);
+
+  }
+
+  initForm() {
+    this.identityForm = this.fb.group({
+      firstName: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(20)]],
+      lastName: ['', [Validators.required]],
+      children: ['', [Validators.required]],
+      age: ['', [Validators.required]],
+    })
+  }
 }
+
+
