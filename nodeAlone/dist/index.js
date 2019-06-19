@@ -33,6 +33,11 @@ app.post('/addUsers', (req, res) => __awaiter(this, void 0, void 0, function* ()
     const addNewUser = yield ref.add(req.body);
     res.status(201).send(addNewUser);
 }));
+app.post('/identity', (req, res) => __awaiter(this, void 0, void 0, function* () {
+    const ref2 = db.collection('identity');
+    const addNewIdentity = yield ref.add(req.body);
+    res.status(201).send(addNewIdentity);
+}));
 app.delete('/removeUsers/:id', (req, res) => __awaiter(this, void 0, void 0, function* () {
     const deleteDoc = yield db.collection('users').doc(req.params.id).delete();
     res.send('deleted !');

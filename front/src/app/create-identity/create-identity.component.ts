@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {UserModel} from "../model/user.model";
-import {tap} from "rxjs/operators";
 import {IdentityModel} from "../model/identity.model";
 
 @Component({
@@ -12,8 +10,6 @@ import {IdentityModel} from "../model/identity.model";
 })
 export class CreateIdentityComponent implements OnInit {
 
-
-  identity: IdentityModel[];
   identityForm: FormGroup;
 
   constructor(private httpClient: HttpClient,
@@ -25,7 +21,7 @@ export class CreateIdentityComponent implements OnInit {
   }
 
   postIdentity(identity: IdentityModel) {
-    this.httpClient.post<IdentityModel[]>('http://localhost:4000/addUsers', identity)
+    this.httpClient.post<IdentityModel[]>('http://localhost:4000/identity', identity)
       .pipe()
       .subscribe();
   }
@@ -40,7 +36,7 @@ export class CreateIdentityComponent implements OnInit {
       firstName: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(20)]],
       lastName: ['', [Validators.required]],
       children: ['', [Validators.required]],
-      age: ['', [Validators.required]],
+      age: [0, [Validators.required]],
     })
   }
 }

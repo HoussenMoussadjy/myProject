@@ -1,16 +1,12 @@
-<div *ngIf="isLoading">chargement en cours...</div>
 
-<div>{{users | json}}</div>
+<form [formGroup]="identityForm" (ngSubmit)="submitForm()">
 
-<form [formGroup]="userForm" (ngSubmit)="submitForm()">
+  <div *ngIf="identityForm.invalid && identityForm.dirty">Attention il y a une erreur</div>
 
-  <div *ngIf="userForm.invalid && userForm.dirty">Attention il y a une erreur</div>
-
-  <ng-container *ngIf="!isLoading">
+  <ng-container>
     <label>
       firstname
       <input type="text" required formControlName="firstName">
-      <div *ngIf="name.invalid && name.dirty">il y a une erreur sur ce champ</div>
     </label>
     <label>
       lastname
@@ -24,7 +20,6 @@
       age
       <input type="number" required formControlName="age">
     </label>
-    <button (click)="userForm.reset()" type="button">RESET</button>
     <button type="submit">AFFICHER</button>
   </ng-container>
 </form>

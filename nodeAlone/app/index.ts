@@ -39,6 +39,12 @@ app.post('/addUsers', async (req, res) =>{
     res.status(201).send(addNewUser);
 });
 
+app.post('/identity', async (req, res) =>{
+    const ref2 = db.collection('identity');
+    const addNewIdentity = await ref.add(req.body);
+    res.status(201).send(addNewIdentity);
+});
+
 app.delete('/removeUsers/:id', async (req, res) =>{
     const deleteDoc = await db.collection('users').doc(req.params.id).delete();
     res.send('deleted !');
