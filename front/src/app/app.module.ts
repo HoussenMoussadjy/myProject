@@ -8,8 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersListComponent } from './users-list/users-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CreateIdentityComponent } from './create-identity/create-identity.component';
-import { ListIdentityComponent } from './list-identity/list-identity.component';
 
 
 @NgModule({
@@ -18,7 +16,6 @@ import { ListIdentityComponent } from './list-identity/list-identity.component';
     HeaderComponent,
     FooterComponent,
     UsersListComponent,
-    ListIdentityComponent
   ],
   imports: [
     BrowserModule,

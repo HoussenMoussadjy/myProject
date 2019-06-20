@@ -4,7 +4,7 @@
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outDir": "./dist/",
+    "outDir": "./app/dist/",
     "sourceMap": true,
     "moduleResolution": "node",
     "typeRoots": ["express", "node"],
@@ -12,10 +12,11 @@
     "watch": true
   },
   "include": [
-    "./**/*"
+    "app/**/*"
   ],
   "exclude": [
     "node_modules",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "front"
   ]
 }
