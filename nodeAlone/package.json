@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "tsc",
     "tsconfig": "tsc -w -p tsconfig.json",
-    "node": "nodemon ./dist/index.js"
+    "node": "nodemon ./app/dist/nodeAlone/app/index.js"
   },
   "author": "",
   "license": "ISC",
