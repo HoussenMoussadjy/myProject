@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {IdentityModel} from "../model/identity.model";
 
+
 @Component({
   selector: 'app-create-identity',
   templateUrl: './create-identity.component.html',
@@ -40,5 +41,4 @@ export class CreateIdentityComponent implements OnInit {
     })
   }
 }
-
 

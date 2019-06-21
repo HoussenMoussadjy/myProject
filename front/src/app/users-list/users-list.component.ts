@@ -62,13 +62,14 @@ export class UsersListComponent implements OnInit {
 
 /*
   changeUser() {
-    this.http.put<UserModel[]>('http://localhost:4000/changeAllUsers')
-    .pipe()
-    .subscribe();
+    this.httpClient.put<UserModel[]>('http://localhost:4000/changeAllUsers')
+      .pipe()
+      .subscribe();
 }
-*/
 
-/*
-  return this.http.delete<UserModel[]>('http://localhost:4000/removeUsers/u6TMCDNV5MeXvHeFQorb').pipe().subscribe();
-   }
+  deleteUser() {
+    this.httpClient.delete<UserModel[]>('http://localhost:4000/removeUsers/u6TMCDNV5MeXvHeFQorb')
+      .pipe()
+      .subscribe();
+}
 */

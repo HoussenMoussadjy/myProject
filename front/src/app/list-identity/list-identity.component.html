@@ -1,3 +1,14 @@
-<div>{{identity | json}}</div>
+<section>
+  <ul>
+    <li *ngFor="let list of identity">{{list | json}}
+      <button type="button">UPDATE</button>
+      <button type="button">DELETE</button>
+    </li>
+  </ul>
+</section>
 
-<p>list-identity works !</p>
+
+
+
+
+

@@ -26,5 +26,8 @@ export class ListIdentityComponent implements OnInit {
         tap(x => console.log(x))
       ).subscribe()
   }
+  delete() {
+    this.httpClient.delete<IdentityModel[]>()
+  }
 }
 
