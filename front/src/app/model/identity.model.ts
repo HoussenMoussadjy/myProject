@@ -1,6 +1,5 @@
 export interface IdentityModel{
-  firstname: string,
-  lastname: string,
+  name: string,
   children: boolean,
   age: number,
   id: string
