@@ -11,12 +11,8 @@ const routes: Routes = [
     loadChildren: './list-identity/list-identity.module#ListIdentityModule'
   },
   {
-    path: 'change-identity',
-    loadChildren: './change-identity/change-identity.module#ChangeIdentityModule'
-  },
-  {
-    path: 'delete-identity',
-    loadChildren: './delete-identity/delete-identity.module#DeleteIdentityModule'
+    path: 'list-user',
+    loadChildren: './list-user/list-user.module#ListUserModule'
   },
 ];
 

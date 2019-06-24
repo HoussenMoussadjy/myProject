@@ -10,13 +10,12 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    UsersListComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,

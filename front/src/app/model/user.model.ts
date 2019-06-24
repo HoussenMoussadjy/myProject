@@ -1,6 +1,6 @@
 export interface UserModel {
-  firstname: string,
-  lastname: string,
+  name: string,
   children: boolean,
   age: number,
+  uid: string
 }
