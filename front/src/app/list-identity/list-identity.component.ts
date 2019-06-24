@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {tap} from "rxjs/operators";
-import {IdentityModel} from "../model/identity.model";
+import {UserModel} from "../model/user.model";
 
 @Component({
   selector: 'app-list-identity',
@@ -10,24 +10,26 @@ import {IdentityModel} from "../model/identity.model";
 })
 export class ListIdentityComponent implements OnInit {
 
-  identity: IdentityModel[];
+  user: UserModel[];
 
   constructor(private httpClient: HttpClient) {
   }
 
   ngOnInit() {
-    this.showIdentity()
+    this.getUser()
   }
 
-  showIdentity() {
-    return this.httpClient.get<IdentityModel[]>('http://localhost:4000/identity')
+  getUser() {
+    return this.httpClient.get<UserModel[]>('http://localhost:4000/users')
       .pipe(
-        tap(identity => this.identity = identity),
+        tap(user => this.user = user),
         tap(x => console.log(x))
       ).subscribe()
   }
-  delete() {
-    this.httpClient.delete<IdentityModel[]>()
-  }
-}
 
+  removeUser(user: UserModel) {
+    return this.httpClient.delete<UserModel[]>('http://localhost:4000/removeUsers/' + user.uid)
+      .pipe()
+      .subscribe()
+}
+}

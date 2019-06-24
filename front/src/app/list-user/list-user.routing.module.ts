@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {DeleteIdentityComponent} from "./delete-identity.component";
-
+import {ListUserComponent} from "./list-user.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: DeleteIdentityComponent
+    component: ListUserComponent
   }
 ];
 
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DeleteIdentityRoutingModule { }
+export class ListUserRoutingModule { }

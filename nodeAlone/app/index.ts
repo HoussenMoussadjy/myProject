@@ -58,7 +58,12 @@ app.post('/identity', async (req, res) =>{
 
 app.delete('/removeUsers/:id', async (req, res) =>{
     const deleteDoc = await db.collection('users').doc(req.params.id).delete();
-    res.send('deleted !');
+    res.send(deleteDoc);
+});
+
+app.delete('/removeIdentity/:id', async (req, res) =>{
+    const deleteDocIdentity = await db.collection('identity').doc(req.params.id).delete();
+    res.send(deleteDocIdentity);
 });
 
 app.put('/changeAllUsers/:id', async (req, res) =>{
