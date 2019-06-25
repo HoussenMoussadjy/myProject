@@ -1,4 +1,4 @@
-export interface IdentityModel{
+export interface IdentityModel {
   name: string,
   children: boolean,
   age: number,

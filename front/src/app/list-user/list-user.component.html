@@ -1,0 +1,10 @@
+<section>
+  <ul>
+    <li *ngFor="let list of identity">{{list | json}}
+      <button type="button">UPDATE</button>
+
+      <button type="button" (click)="removeIdentity(list)">DELETE</button>
+
+    </li>
+  </ul>
+</section>
