@@ -12,7 +12,7 @@ const express = require("express");
 const admin = require("firebase-admin");
 const bodyParser = require("body-parser");
 const app = express();
-const serviceAccount = require("C:\\Users\\pirat\\WebstormProjects\\untitled2\\nodeAlone\\monprojet.json");
+const serviceAccount = require("C:\\Users\\USER\\WebstormProjects\\myProject\\nodeAlone\\monprojet.json");
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: "https://monprojet-3cd36.firebaseio.com"
