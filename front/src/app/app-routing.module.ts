@@ -19,8 +19,8 @@ const routes: Routes = [
     loadChildren: './update-user/update-user.module#UpdateUserModule'
   },
   {
-    path: 'update-list',
-    loadChildren: './update-list/update-list.module#UpdateListModule'
+    path: 'update-identity',
+    loadChildren: './update-identity/update-identity.module#UpdateIdentityModule'
   },
 ];
 
