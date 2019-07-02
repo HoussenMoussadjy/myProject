@@ -14,6 +14,14 @@ const routes: Routes = [
     path: 'list-user',
     loadChildren: './list-user/list-user.module#ListUserModule'
   },
+  {
+    path: 'update-user',
+    loadChildren: './update-user/update-user.module#UpdateUserModule'
+  },
+  {
+    path: 'update-list',
+    loadChildren: './update-list/update-list.module#UpdateListModule'
+  },
 ];
 
 @NgModule({
