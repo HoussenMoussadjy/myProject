@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+import {AngularFirestore} from "@angular/fire/firestore";
 
 @Component({
   selector: 'app-update-identity',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateIdentityComponent implements OnInit {
 
-  constructor() { }
+  id: string;
+
+  constructor(
+    private route: ActivatedRoute,
+    private afs: AngularFirestore,
+  ) {
+  }
 
   ngOnInit() {
   }
