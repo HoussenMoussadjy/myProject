@@ -15,7 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    UsersListComponent
+    UsersListComponent,
   ],
   imports: [
     BrowserModule,
