@@ -12,7 +12,9 @@ export class ListUserComponent implements OnInit {
 
   identity: IdentityModel[];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(
+    private httpClient: HttpClient
+  ) { }
 
   ngOnInit() {
     this.getIdentity()

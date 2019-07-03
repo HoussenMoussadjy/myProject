@@ -1,7 +1,7 @@
 <section>
   <ul>
-    <li *ngFor="let list of user">{{list | json}}
-      <button type="button" routerLink="update-user">UPDATE</button>
+    <li *ngFor="let list of user">{{list.name}}
+      <button type="button" routerLink="/update-identity">UPDATE</button>
 
       <button type="button" (click)="removeUser(list)">DELETE</button>
 

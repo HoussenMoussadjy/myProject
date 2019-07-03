@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {AngularFirestore} from "@angular/fire/firestore";
+
 
 @Component({
   selector: 'app-update-user',
@@ -13,11 +13,12 @@ export class UpdateUserComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private afs: AngularFirestore,
   ) {
   }
 
   ngOnInit() {
+    this.id = this.route.snapshot.params.id;
+    console.log(this.id)
   }
 
 }
