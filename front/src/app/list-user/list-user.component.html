@@ -1,10 +1,9 @@
 <section>
   <ul>
-    <li *ngFor="let list of identity">Bonjour {{list.name}} et Bienvenue
-
+    <li *ngFor="let list of user">{{list.name}}
       <button type="button" routerLink="/update-user">UPDATE</button>
 
-      <button type="button" (click)="removeIdentity(list)">DELETE</button>
+      <button type="button" (click)="removeUser(list.uid)">DELETE</button>
 
     </li>
   </ul>

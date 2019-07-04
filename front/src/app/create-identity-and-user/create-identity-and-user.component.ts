@@ -6,11 +6,11 @@ import {UserModel} from "../model/user.model";
 
 
 @Component({
-  selector: 'app-create-identity',
-  templateUrl: './create-identity.component.html',
-  styleUrls: ['./create-identity.component.scss']
+  selector: 'app-create-identity-and-user',
+  templateUrl: './create-identity-and-user.component.html',
+  styleUrls: ['./create-identity-and-user.component.scss']
 })
-export class CreateIdentityComponent implements OnInit {
+export class CreateIdentityAndUserComponent implements OnInit {
 
   identityForm: FormGroup;
   userForm : FormGroup;
