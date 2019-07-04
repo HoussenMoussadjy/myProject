@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: 'create-identity-and-user',
-    loadChildren: './create-identity/create-identity.module#CreateIdentityModule'
+    loadChildren: './create-identity-and-user/create-identity-and-user.module#CreateIdentityAndUserModule'
   },
 {
     path: 'list-identity',

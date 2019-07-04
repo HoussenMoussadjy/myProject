@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {tap} from "rxjs/operators";
 import {HttpClient} from "@angular/common/http";
-import {IdentityModel} from "../model/identity.model";
+import {AngularFirestore} from "@angular/fire/firestore";
+import {UserModel} from "../model/user.model";
 
 @Component({
   selector: 'app-list-user',
@@ -9,29 +10,35 @@ import {IdentityModel} from "../model/identity.model";
   styleUrls: ['./list-user.component.scss']
 })
 export class ListUserComponent implements OnInit {
+  user: UserModel[];
 
-  identity: IdentityModel[];
-
-  constructor(
-    private httpClient: HttpClient
+  constructor(private httpClient: HttpClient,
+              private afs: AngularFirestore
   ) { }
 
   ngOnInit() {
-    this.getIdentity()
+    this.getUser()
   }
 
-  getIdentity() {
-    return this.httpClient.get<IdentityModel[]>('http://localhost:4000/identity')
+  getUser() {
+    return this.afs.collection<UserModel>("users").valueChanges()
       .pipe(
-        tap(identity => this.identity = identity),
-        tap(x => console.log(x))
+        tap(x => console.log(x)),
+        tap(user => this.user = user)
       ).subscribe()
   }
-  removeIdentity(identity: IdentityModel) {
-    return this.httpClient.delete<IdentityModel[]>('http://localhost:4000/removeIdentity/' + identity.uid)
-      .pipe()
-      .subscribe()
+
+  removeUser(uid: string) {
+    return this.afs.collection<UserModel>("users").doc(uid).delete()
+
+
+
+
   }
-  }
+}
+
+
+
+
 
 
