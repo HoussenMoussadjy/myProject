@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-
+import {AngularFirestore} from "@angular/fire/firestore";
+import {IdentityModel} from "../model/identity.model";
 
 @Component({
   selector: 'app-update-identity',
@@ -13,12 +14,18 @@ export class UpdateIdentityComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private afs: AngularFirestore
   ) {
   }
 
   ngOnInit() {
-    this.id = this.route.snapshot.params.id;
-    console.log(this.id)
+  //this.UpdateIdentity()
   }
+
+ /* UpdateIdentity() {
+    return this.afs.collection<IdentityModel>("identity").doc(uid).set(this.identityForm.value)
+      .pipe()
+      .subscribe()
+  }*/
 
 }

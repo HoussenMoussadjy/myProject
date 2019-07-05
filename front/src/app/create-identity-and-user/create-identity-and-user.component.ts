@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {IdentityModel} from "../model/identity.model";
 import {UserModel} from "../model/user.model";
+import {AngularFirestore} from "@angular/fire/firestore";
 
 
 @Component({
@@ -16,7 +17,8 @@ export class CreateIdentityAndUserComponent implements OnInit {
   userForm : FormGroup;
 
   constructor(private httpClient: HttpClient,
-              private fb: FormBuilder) {
+              private fb: FormBuilder,
+              private afs: AngularFirestore) {
   }
 
   ngOnInit() {
@@ -24,16 +26,26 @@ export class CreateIdentityAndUserComponent implements OnInit {
     this.initUserForm();
   }
 
-  postIdentity(identity: IdentityModel) {
+  //Node method
+  /* postIdentity(identity: IdentityModel) {
     this.httpClient.post<IdentityModel[]>('http://localhost:4000/identity', identity)
       .pipe()
       .subscribe();
+  }*/
+
+  postIdentity(data) {
+    return this.afs.collection<IdentityModel>("identity").add(data)
   }
 
-  postUser(user: UserModel) {
+  //Node method
+  /*  postUser(user: UserModel) {
     this.httpClient.post<UserModel[]>('http://localhost:4000/addUsers', user)
       .pipe()
       .subscribe();
+  }*/
+
+  postUser(data) {
+    return this.afs.collection<UserModel>("users").add(data)
   }
 
   submitForm() {
@@ -59,7 +71,5 @@ export class CreateIdentityAndUserComponent implements OnInit {
       age: [0, [Validators.required]],
     })
   }
+
 }
-
-
-

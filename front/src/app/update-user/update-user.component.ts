@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {tap} from "rxjs/operators";
 import {UserModel} from "../model/user.model";
 import {AngularFirestore} from "@angular/fire/firestore";
 
@@ -21,5 +20,19 @@ export class UpdateUserComponent implements OnInit {
   }
 
   ngOnInit() {
+  //this.UpdateUser()
   }
+
+ /* UpdateUser() {
+  return this.afs.collection<UserModel>("users").doc(uid).set(this.userForm.value)
+    .pipe()
+    .subscribe()
+  }
+*/
 }
+
+
+
+
+
+

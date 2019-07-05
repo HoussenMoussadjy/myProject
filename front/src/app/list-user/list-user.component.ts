@@ -30,11 +30,8 @@ export class ListUserComponent implements OnInit {
 
   removeUser(uid: string) {
     return this.afs.collection<UserModel>("users").doc(uid).delete()
-
-
-
-
   }
+
 }
 
 
