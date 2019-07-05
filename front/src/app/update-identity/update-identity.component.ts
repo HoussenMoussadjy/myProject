@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {AngularFirestore} from "@angular/fire/firestore";
+import {FormBuilder, FormGroup} from "@angular/forms";
 import {IdentityModel} from "../model/identity.model";
+//import {IdentityModel} from "../model/identity.model";
 
 @Component({
   selector: 'app-update-identity',
@@ -11,10 +13,13 @@ import {IdentityModel} from "../model/identity.model";
 export class UpdateIdentityComponent implements OnInit {
 
   id: string;
+  identity: IdentityModel;
+  identityForm: FormGroup;
 
   constructor(
     private route: ActivatedRoute,
-    private afs: AngularFirestore
+    private afs: AngularFirestore,
+    private fb: FormBuilder
   ) {
   }
 
@@ -27,5 +32,15 @@ export class UpdateIdentityComponent implements OnInit {
       .pipe()
       .subscribe()
   }*/
+
+  initForm() {
+
+    this.identityForm = this.fb.group({
+      name: [],
+      children: [],
+      age: []
+    })
+
+ }
 
 }

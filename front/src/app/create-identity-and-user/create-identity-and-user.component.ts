@@ -26,7 +26,7 @@ export class CreateIdentityAndUserComponent implements OnInit {
     this.initUserForm();
   }
 
-  //Node method
+  // Node method
   /* postIdentity(identity: IdentityModel) {
     this.httpClient.post<IdentityModel[]>('http://localhost:4000/identity', identity)
       .pipe()
@@ -37,7 +37,7 @@ export class CreateIdentityAndUserComponent implements OnInit {
     return this.afs.collection<IdentityModel>("identity").add(data)
   }
 
-  //Node method
+  // Node method
   /*  postUser(user: UserModel) {
     this.httpClient.post<UserModel[]>('http://localhost:4000/addUsers', user)
       .pipe()
